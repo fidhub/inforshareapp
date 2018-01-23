@@ -3,7 +3,6 @@ package za.ac.cput.inforshareapp.presentation;
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.LiveData;
-import android.arch.paging.PagedList;
 
 import java.util.ArrayList;
 import java.util.List;

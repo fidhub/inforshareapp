@@ -1,6 +1,5 @@
 package za.ac.cput.inforshareapp.domain
 
-import java.util.*
 
 /**
  * Created by Hunter on 19/01/2018.
