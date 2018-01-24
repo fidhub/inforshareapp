@@ -1,7 +1,5 @@
 package za.ac.cput.inforshareapp;
 
-import android.arch.lifecycle.ViewModelProviders;
-import android.os.UserManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,11 +7,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import za.ac.cput.inforshareapp.domain.*;
-
-import za.ac.cput.inforshareapp.R;
-import za.ac.cput.inforshareapp.presentation.UserModel;
 
 import static android.widget.Toast.makeText;
 
