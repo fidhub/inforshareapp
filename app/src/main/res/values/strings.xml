@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">inforshareapp</string>
+    <string name="title_activity_recycler_test">recycler_test</string>
 </resources>
