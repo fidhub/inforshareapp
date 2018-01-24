@@ -5,7 +5,7 @@
 /.idea/libraries
 .DS_Store
 /build
-/scr/app/app.iml
+/src/app.iml
 /captures
 /gradle.properties
 .externalNativeBuild
