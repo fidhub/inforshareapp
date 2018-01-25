@@ -1,4 +1,4 @@
-package za.ac.cput.inforshareapp.domain.users;
+package za.ac.cput.inforshareapp.domain.user;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
