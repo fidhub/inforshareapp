@@ -9,17 +9,24 @@ import java.time.LocalDateTime;
 
 public class User implements Serializable {
 
-    private String siteId;
-    private String email;
-    private String firstName;
-    private String lastName;
-    private String screenName;
-    private String password;
-    private String state;
-    private LocalDateTime date;
+    private final  String siteId;
+    private final String email;
+    private final String firstName;
+    private final String lastName;
+    private final String screenName;
+    private final String password;
+    private final String state;
+    private final LocalDateTime date;
 
     public User(Builder builder) {
         siteId=builder.siteId;
+        email= builder.email;
+        firstName=builder.firstName;
+        lastName=builder.lastName;
+        screenName=builder.screenName;
+        password=builder.password;
+        state=builder.state;
+        date=builder.date;
     }
 
     public static class Builder{
@@ -43,11 +50,23 @@ public class User implements Serializable {
         }
 
         public Builder firstName(String value ){
-            this.siteId = value;
+            this.firstName = value;
             return this;
         }
-        public Builder last(String value ){
-            this.siteId = value;
+        public Builder lastName(String value ){
+            this.lastName = value;
+            return this;
+        }
+        public Builder screenName(String value ){
+            this.screenName = value;
+            return this;
+        }
+        public Builder state(String value ){
+            this.state = value;
+            return this;
+        }
+        public Builder date(LocalDateTime value ){
+            this.date = value;
             return this;
         }
 
