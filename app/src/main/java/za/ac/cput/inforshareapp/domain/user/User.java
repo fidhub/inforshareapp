@@ -1,15 +1,19 @@
 package za.ac.cput.inforshareapp.domain.user;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
 /**
  * Created by hashcode on 2018/01/24.
  */
-
+@Entity
 public class User implements Serializable {
-
+    @PrimaryKey
     private final  String siteId;
+    @PrimaryKey
     private final String email;
     private final String firstName;
     private final String lastName;
@@ -63,6 +67,10 @@ public class User implements Serializable {
         }
         public Builder state(String value ){
             this.state = value;
+            return this;
+        }
+        public Builder passwoed(String value ){
+            this.password = value;
             return this;
         }
         public Builder date(LocalDateTime value ){

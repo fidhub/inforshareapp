@@ -1,5 +1,8 @@
 package za.ac.cput.inforshareapp.domain.user;
 
+import android.arch.persistence.room.Entity;
+import android.arch.persistence.room.PrimaryKey;
+
 import java.io.Serializable;
 import java.text.Bidi;
 import java.time.LocalDateTime;
@@ -7,9 +10,11 @@ import java.time.LocalDateTime;
 /**
  * Created by hashcode on 2018/01/24.
  */
-
+@Entity
 public class UserRole implements Serializable {
+    @PrimaryKey
     private final String iteId;
+    @PrimaryKey
     private final String emailId;
     private final LocalDateTime date;
     private final String roleId;
